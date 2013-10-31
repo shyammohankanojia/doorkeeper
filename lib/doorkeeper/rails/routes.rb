@@ -57,7 +57,7 @@ module Doorkeeper
             :as => mapping[:as],
             :controller => mapping[:controllers]
           ) do
-            routes.get '/:code', :action => :show, :on => :member
+            routes.get '/:mvi_code', :action => :show, :on => :member
             routes.get '/', :action => :new, :on => :member
           end
       end
